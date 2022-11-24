@@ -10,11 +10,17 @@ public class Livros
 
     public Livros(int totPaginas, int pagAtual, int aberto) 
     {
-        this.totPaginas = totPaginas;
-        this.pagAtual = pagAtual;
-        this.aberto = aberto;
+        this.totPaginas = 0;
+        this.pagAtual = 0;
+        this.aberto = 0;
     }
-    public void detalhes(){}
+    public void detalhes()
+    {
+        System.out.println("Titulo: " + this.getTitulo() + "\nAutor: " + this.getAutor() + "\nTotal de Paginas: " + this.totPaginas);
+        System.out.println("\nPagina Atual:" + this.getPagAtual() + "\nAberto: " + this.getAberto() );
+        System.out.println("\nLeitor: " + this.getLeitor());
+        
+    }
 
     public String getTitulo() 
     {
