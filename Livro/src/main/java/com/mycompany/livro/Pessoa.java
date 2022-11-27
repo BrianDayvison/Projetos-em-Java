@@ -11,11 +11,8 @@ public class Pessoa
         this.idade = id;
         this.sexo = sx;
     }
-    
-    
-    
-    
     //-----------------------//
+   
     public String getNome() 
     {
         return nome;
@@ -57,4 +54,5 @@ public class Pessoa
     {
         System.out.println("Nome: " + this.getNome() + "\nIdade: " + this.getIdade() + "\nSexo: " + this.getSexo());
     }
+
 }

@@ -1,26 +1,30 @@
 package com.mycompany.livro;
-public class Livros 
+public class Livros implements Publicação
 {
     private String titulo;
     private String autor;
     private int totPaginas;
     private int pagAtual;
-    private int aberto;
+    private boolean aberto;
     private Pessoa leitor;
+    
 
-    public Livros(int totPaginas, int pagAtual, int aberto) 
+    public Livros(String tl, String at, int tp, Pessoa p) 
     {
-        this.totPaginas = 0;
+        this.titulo = tl;
+        this.autor = at;
+        this.totPaginas = tp;
         this.pagAtual = 0;
-        this.aberto = 0;
+        this.aberto = false;
+        this.leitor = p;
+    
+
     }
-    public void detalhes()
+    public String detalhes() 
     {
-        System.out.println("Titulo: " + this.getTitulo() + "\nAutor: " + this.getAutor() + "\nTotal de Paginas: " + this.totPaginas);
-        System.out.println("\nPagina Atual:" + this.getPagAtual() + "\nAberto: " + this.getAberto() );
-        System.out.println("\nLeitor: " + this.getLeitor());
-        
+        return " titulo: " + titulo + "\n autor: " + autor + "\n totPaginas: " + totPaginas + "\n pagAtual: " + pagAtual + "\n aberto: " + aberto + "\n leitor: " + leitor.getNome();
     }
+    
 
     public String getTitulo() 
     {
@@ -62,12 +66,12 @@ public class Livros
         this.pagAtual = pagAtual;
     }
 
-    public int getAberto() 
+    public boolean getAberto() 
     {
         return aberto;
     }
 
-    public void setAberto(int aberto) 
+    public void setAberto(boolean aberto) 
     {
         this.aberto = aberto;
     }
@@ -80,6 +84,52 @@ public class Livros
     public void setLeitor(Pessoa leitor) 
     {
         this.leitor = leitor;
+    }
+//--------------------------------------------//
+    @Override
+    public void abrir() 
+    {
+      if(this.aberto==true)
+      {
+          System.out.println("Ja esta aberto. \nse desaja fechar use a opção fechar");
+      }else
+        {this.setAberto(true);}
+    }
+    
+    @Override
+    public void fechar() 
+    {
+        if(this.aberto==false)
+        {
+            System.out.println("Ja esta fechado. \nse deseja abrir use a opeção abrir");
+        }else{this.setAberto(false);}
+    }
+
+    @Override
+    public void folhear(int x) 
+    {
+        if(x <= this.getTotPaginas() && this.getAberto() == true)
+        {
+            this.setPagAtual(x);
+        }else{System.out.println("impossivel folhear ate " + x +" paginas");}
+    }
+
+    @Override
+    public void avancarPag() 
+    {
+        if(this.aberto==true)
+        {
+            this.pagAtual ++;
+        }
+    }
+
+    @Override
+    public void voltarPag() 
+    {
+        if(this.aberto==true)
+        {
+            this.pagAtual --;
+        }
     }
     
    
