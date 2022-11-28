@@ -54,5 +54,4 @@ public class Pessoa
     {
         System.out.println("Nome: " + this.getNome() + "\nIdade: " + this.getIdade() + "\nSexo: " + this.getSexo());
     }
-
 }

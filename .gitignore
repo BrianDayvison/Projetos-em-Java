@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 /Livro/target/
 *.xml
+Livro/src/main/java/com/mycompany/livro/Pessoa.java
+Livro/src/main/java/com/mycompany/livro/Pessoa.java

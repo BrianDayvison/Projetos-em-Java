@@ -1,4 +1,7 @@
 package com.mycompany.bancointerface;
+
+import java.util.Scanner;
+
 public class Bancointerface 
 {
 
@@ -8,9 +11,16 @@ public class Bancointerface
        c1.abrirConta("CP");
        c1.setNumConta(1111);
        c1.setDono("brian");
-       c1.depositar(30);
        c1.atual();
-       c1.sacar(40);
+       c1.sacar();
        c1.atual();
+       
+       
+       
+       
+       //Scanner teclado = new Scanner(System.in);
+      // String nome = teclado.nextLine();
+       //float nota = teclado.nextFloat();
+       // System.out.println("Nome: " + nome + "\nnota: " + nota);
     }
 }

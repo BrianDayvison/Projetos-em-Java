@@ -1,4 +1,7 @@
 package com.mycompany.bancointerface;
+
+import java.util.Scanner;
+
 public class Banco 
 {
     //atributos
@@ -50,11 +53,15 @@ public class Banco
             setStatus(false);
         }
     }
-    public void depositar(float d)
-    {
+    public void depositar( )
+    {   
         if (status == true)
         {
 //modifiqueo o saldo p/ get saldo () + d
+            
+            System.out.println("Digite o valor do deposito: ");
+            Scanner teclado = new Scanner(System.in);
+            float d = teclado.nextFloat();
             setSaldo(getSaldo() + d);
         }
         else if (status == false)
@@ -62,11 +69,15 @@ public class Banco
             System.out.println("voce nao possui uma conta");
         }
     }
-    public void sacar(float sc)
+    public void sacar()
     {
         if (status == true && saldo > 0)
         {
+            System.out.println("Digite o valor do saque: ");
+            Scanner teclado = new Scanner(System.in);
+            float sc = teclado.nextFloat();
             saldo = (saldo - sc);
+            
         }
     }
     public void pagarMensal()
