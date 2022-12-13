@@ -26,3 +26,8 @@ replay_pid*
 *.xml
 Livro/src/main/java/com/mycompany/livro/Pessoa.java
 Livro/src/main/java/com/mycompany/livro/Pessoa.java
+/heranca/nbproject/private/
+heranca/manifest.mf
+heranca/nbproject/genfiles.properties
+heranca/nbproject/project.properties
+/heranca/build/
