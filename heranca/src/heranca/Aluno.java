@@ -13,6 +13,11 @@ public class Aluno extends Pessoa
         this.setMatricula(0);
     }
     
+    public void pagarMensalidade()
+    {
+        System.out.println("Pagando mensalidade do aluno: " + this.getNome());
+    }
+    
     //getters e sedders
 
     public int getMatricula() 

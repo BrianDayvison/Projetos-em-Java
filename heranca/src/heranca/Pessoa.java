@@ -1,7 +1,7 @@
 package heranca;
 
 
-public class Pessoa 
+abstract class Pessoa 
 {
     private String nome;
     private int idade;
@@ -46,7 +46,7 @@ public class Pessoa
     @Override
     public String toString() 
     {
-        return "Pessoa:\n" + "nome: " + nome + ", idade: " + idade + ", sexo: " + sexo + '}' + "\n-----------------------" ;
+        return "Dados:\n" + "nome: " + nome + ", idade: " + idade + ", sexo: " + sexo + '}' + "\n-----------------------" ;
         
     }
     
