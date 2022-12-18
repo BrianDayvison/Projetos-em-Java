@@ -31,3 +31,12 @@ heranca/manifest.mf
 heranca/nbproject/genfiles.properties
 heranca/nbproject/project.properties
 /heranca/build/
+/PolimorfismoDeSobreposicao/nbproject/private/
+/PolimorfismoDeSobreposicao/build/
+heranca/src/heranca/diagrama/Herança.asta
+heranca/src/heranca/Herança.asta.lock
+PolimorfismoDeSobreposicao/manifest.mf
+PolimorfismoDeSobreposicao/nbproject/genfiles.properties
+PolimorfismoDeSobreposicao/nbproject/project.properties
+UFE_RelacionamentoClasses/target/classes/.netbeans_automatic_build
+UFE_RelacionamentoClasses/target/test-classes/.netbeans_automatic_build
