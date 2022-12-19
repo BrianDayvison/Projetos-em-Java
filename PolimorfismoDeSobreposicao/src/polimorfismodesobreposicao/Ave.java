@@ -13,7 +13,8 @@ public class Ave extends Animal
 
     public void detalhes ()
     {
-        System.out.println("Cor do pelo é:" + this.getCorPena()+ " e o peso é : " + this.getPeso());
+        System.out.println("\nAVE:");
+        System.out.println("Cor do pelo é " + this.getCorPena()+ " e o peso é  " + this.getPeso());
     }
     
     

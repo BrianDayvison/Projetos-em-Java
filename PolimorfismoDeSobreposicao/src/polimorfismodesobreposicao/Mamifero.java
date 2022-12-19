@@ -1,10 +1,10 @@
 
 package polimorfismodesobreposicao;
 
-public class Mamifero extends Animal 
+public abstract class Mamifero extends Animal 
 {
 
-    public Mamifero(String corPelo, float pe) 
+   public Mamifero(String corPelo, float pe)  
     {
         this.corPelo = corPelo;
         this.setPeso(pe);
@@ -12,7 +12,7 @@ public class Mamifero extends Animal
     
     public void detalhes()
     {
-        System.out.println("Cor do pelo é:" + this.getCorPelo() + " e o peso é : " + this.getPeso());
+        System.out.println("Cor do pelo é " + this.getCorPelo() + " e o peso é " + this.getPeso());
     }
 //atributos    
     private String corPelo;
@@ -43,7 +43,7 @@ public class Mamifero extends Animal
     }
 
     @Override
-    public void emitirSom() 
+    public  void emitirSom() 
     {
         System.out.println("Som de mamifero");
     }
