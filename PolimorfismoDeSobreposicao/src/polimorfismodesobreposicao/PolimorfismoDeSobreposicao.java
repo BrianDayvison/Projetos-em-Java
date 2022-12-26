@@ -13,14 +13,10 @@ public class PolimorfismoDeSobreposicao
         Canguru c = new Canguru ("amarelo",30f);
         Cachorro ca = new Cachorro("preto",22f);
         
-        a.detalhes();
-        c.detalhes();
-        c.alimenta();
-        c.emitirSom();
-        c.locomover();
-        c.usarBolsa();
+     
         ca.detalhes();
         ca.locomover();
+        ca.reagir(15,30);
         
     }
     
