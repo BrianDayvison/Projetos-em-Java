@@ -1,5 +1,3 @@
-package com.mycompany.mainpilha;
-
 import classes.Pilha;
 
 /*
