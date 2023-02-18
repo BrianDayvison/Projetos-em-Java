@@ -11,12 +11,12 @@ public class PolimorfismoDeSobreposicao
         //Mamifero m = new Mamifero("marrom",6.2f);
         Ave a = new Ave("vermelho", 5.2f);
         Canguru c = new Canguru ("amarelo",30f);
-        Cachorro ca = new Cachorro("preto",22f);
-        
+        Mamifero ca = new Cachorro("preto",22f);
+        Cachorro cb = new Cachorro ("cinza", 15f);
      
         ca.detalhes();
         ca.locomover();
-        ca.reagir(15,30);
+        cb.reagir(15,30);
         
     }
     
