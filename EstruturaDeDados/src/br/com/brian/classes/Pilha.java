@@ -1,4 +1,4 @@
-package classes;
+package br.com.brian.classes;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

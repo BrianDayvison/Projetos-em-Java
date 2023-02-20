@@ -1,4 +1,6 @@
-import classes.Conjunto;
+package br.com.brian.mains;
+
+import br.com.brian.classes.Conjunto;
 import java.util.LinkedList;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

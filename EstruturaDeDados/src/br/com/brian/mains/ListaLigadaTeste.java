@@ -1,4 +1,6 @@
-import classes.ListaLigada;
+package br.com.brian.mains;
+
+import br.com.brian.classes.ListaLigada;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
