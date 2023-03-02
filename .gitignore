@@ -66,3 +66,7 @@ EstruturaDeDados/manifest.mf
 EstruturaDeDados/nbproject/project.properties
 EstruturaDeDados/nbproject/private/private.properties
 EstruturaDeDados/nbproject/genfiles.properties
+/EstruturaDeDados/dist/
+EstruturaDeDados/nbproject/private/config.properties
+*.history
+*.properties
